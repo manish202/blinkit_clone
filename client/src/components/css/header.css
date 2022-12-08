@@ -1,0 +1,377 @@
+.logo{
+    padding: 20px;
+    border-right: 1px solid lightgray;
+}
+.location{
+    padding: 20px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.location h4{
+    font-size: 20px;
+}
+.location p{
+    font-size: 18px;
+}
+.search{
+    padding: 20px;
+}
+.search.active{
+    z-index: 10;
+}
+.search span{
+    display: none;
+    position: fixed;
+    left: 15px;
+    top: 15px;
+    background-color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 3px;
+}
+.search.active span{
+    display: block;
+}
+.search.active .search-box{
+    box-shadow: none;
+    border: none;
+}
+.search-box,.search-loc{
+    position: relative;
+    box-shadow: 2px 1px 3px lightgrey;
+    border-radius: 3px;
+    width: 40vw;
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    background-color: #fff;
+}
+.search-box button{
+    font-size: 20px;
+    padding: 5px;
+    outline: none;
+    border: none;
+    color: gray;
+    width: 35px;
+    line-height: 40px;
+    border-radius: 4px 0 0 4px;
+    background-color: transparent;
+    transition: all 0.3s;
+}
+.search-box button:hover{
+    background-color: lightgray;
+}
+.search-box input{
+    width: calc(100% - 35px);
+}
+.my-input{
+    outline: none;
+    font-size: 20px;
+    padding: 5px 10px;
+    border: none;
+}
+.logo a{
+    font-size: 40px;
+    font-weight: bolder;
+    color: #F8CB46;
+}
+.logo span{
+    color: var(--main-color);
+}
+.log-cart button{
+    padding: 5px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+.log-cart button:first-child{
+    text-transform: capitalize;
+}
+.log-cart button:nth-child(2){
+    width: 120px;
+    font-size: 16px;
+    margin: 0 10px 0 15px;
+    padding: 10px;
+}
+.log-cart button:last-child .fa-cart-shopping{
+    padding-right: 7px;
+}
+.btn-green{
+    background-color: var(--main-color) !important;
+    color: #fff;
+    border-radius: 5px;
+}
+.nav-bar{
+    box-shadow: 0px 0px 3px lightgrey;
+    position: sticky;
+    top: 0;
+    background-color: #fff;
+    z-index: 2;
+}
+.popup-shadow{
+    background-color: rgba(0,0,0,0.4);
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+}
+.location-card{
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 2px 2px 4px grey;
+    border-radius: 4px;
+    z-index: 3;
+}
+.location-card .relative{
+    position: relative;
+    width: 100%;
+}
+.location-card .inline{
+    padding: 10px;
+    text-transform: capitalize;
+    font-weight: bold;
+    position: relative;
+}
+.location-card .inline span:last-child{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+.detect-loc{
+    padding: 10px;
+    align-items: flex-start !important;
+}
+.detect-loc span{
+    padding: 10px;
+}
+.g-button{
+    padding: 10px;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-right: 10px;
+}
+.search-loc{
+    margin-left: 10px;
+    width: auto;
+    border: none;
+}
+.search-loc .my-input{
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    width: auto;
+}
+.search-loc ul li{
+    cursor: pointer;
+    width: min-content;
+}
+.search-box ul{
+    position: absolute;
+    left: 0;
+    top: 45px;
+    background-color: #fff;
+    width: 100%;
+    max-height: 70vh;
+    overflow-y: auto;
+    padding: 10px;
+    border-radius: 4px;
+}
+.search-box ul li a,.search-loc ul li{
+    padding: 10px;
+    text-transform: capitalize;
+    display: block;
+    color: black;
+}
+.login-popup{
+    text-transform: capitalize;
+    position: fixed;
+    left: calc(50vw - 250px);
+    top: calc(50vh - 150px);
+    width: 500px;
+    background-color: #fff;
+    text-align: center;
+    border-radius: 5px;
+    height: 300px;
+    z-index: 3;
+}
+.login-popup .respo-box{
+    width: 70%;
+    position: relative;
+}
+.login-popup .respo-box span{
+    position: absolute;
+    right: -50px;
+    top: -10px;
+}
+.login-popup h2,.login-popup h3{
+    padding: 10px;
+}
+.login-popup .search-box{
+    width: auto;
+    margin: 10px 0px;
+}
+.login-popup .search-box button{
+    width: 90px;
+    padding: 0;
+}
+.login-popup .search-box button:hover{
+    background-color: transparent;
+    cursor: default;
+}
+.login-popup .search-box input{
+    width: auto;
+    padding: 0;
+}
+.login-popup .btn-green{
+    margin: 10px;
+    width: inherit;
+    font-size: 20px;
+}
+.cart-sidbar{
+    min-width: 250px;
+    max-width: 340px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    padding: 0 10px;
+    height: 100vh;
+    text-transform: capitalize;
+    overflow-y: auto;
+    z-index: 3;
+}
+.d-flex.m-cart{
+    justify-content: space-between;
+    text-transform: capitalize;
+    position: sticky;
+    left: 0;
+    top: 0;
+    background-color: #fff;
+}
+.m-cart h1,.m-cart span{
+    padding: 10px;
+    font-size: 29px;
+}
+.cart-empty{
+    width: 200px;
+    margin: 10px auto;
+    display: block;
+}
+.cart-sidbar .g-button{
+    margin: 10px auto;
+    display: block;
+    position: sticky;
+    bottom: 0;
+}
+.cart-card img{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+.cart-sidbar .inline{
+    padding: 10px 2px;
+}
+.cart-sidbar .inline i{
+    border: 1px solid;
+    padding: 10px;
+    border-radius: 50%;
+}
+.cart-card{
+    padding: 10px 0px;
+    border-bottom: 1px solid gray;
+}
+.pro-data span{
+    text-decoration: line-through 1px solid gray;
+    color: gray;
+    padding-left: 5px;
+}
+.pro-data small{
+    padding: 5px 0px;
+}
+.pro-btn button,.pro-btn span{
+    padding: 6px;
+    outline: none;
+    border: none;
+    background-color: var(--main-color);
+    color: #fff;
+    font-size: 17px;
+}
+.pro-btn button:first-child{
+    border-radius: 5px 0 0 5px;
+}
+.pro-btn button:last-child{
+    border-radius: 0 5px 5px 0;
+}
+.pro-btn .add:last-child{
+    border-radius: 5px;
+    padding: 5px 15px;
+    background-color: #fff;
+    color: var(--main-color);
+    border: 1px solid var(--main-color);
+    font-weight: bold;
+}
+.pro-data{
+    padding: 0 5px;
+    width: 160px;
+}
+.cart-card-box .d-flex{
+    justify-content: space-between;
+}
+.pro-btn{
+    align-self: flex-end;
+}
+.bill-details h4{
+    padding: 10px;
+}
+.bill-details table th,.bill-details table td{
+    padding: 4px;
+}
+@media (max-width:900px){
+    .logo{
+        display: none;
+    }
+    .nav-bar,.detect-loc{
+        flex-direction: column;
+    }
+    .location,.search{
+        width: 100%;
+        padding: 10px;
+    }
+    .search-box{
+        width: 100%;
+    }
+    .log-cart button:first-child{
+        position: fixed;
+        top: 15px;
+        right: 15px;
+    }
+    .log-cart button:nth-child(2){
+        width: 90vw;
+        position: fixed;
+        bottom: 10px;
+        z-index: 3;
+    }
+    .location-card,.login-popup{
+        left: 0;
+        top: 0;
+        width: 100vw;
+        height: 100vh;
+    }
+    .detect-loc span{
+        padding: 20px;
+    }
+    .login-popup .respo-box{
+        width: 95%;
+    }
+    .login-popup .respo-box span{
+        position: fixed;
+        right: 15px;
+        top: 15px;
+    }
+}

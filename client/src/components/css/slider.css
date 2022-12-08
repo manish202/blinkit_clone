@@ -1,0 +1,62 @@
+.swiper-slide img{
+    width: 100%;
+}
+.mySwiper{
+    width: 90%;
+    padding-bottom: 20px;
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 18px;
+}
+.swiper-button-prev,.swiper-button-next{
+    background-color: #fff;
+    padding: 10px;
+    width: 40px;
+    border-radius: 50%;
+    box-shadow: 0px 0px 3px grey;
+    color: black;
+}
+.swiper-button-disabled{
+    display: none;
+}
+.offer-card{
+    padding: 20px;
+    border: 2px dashed gray;
+    text-align: center;
+    text-transform: capitalize;
+}
+.offer-card h2{
+    padding: 10px;
+}
+.offer-card small,.offer-card span{
+    display: block;
+    padding-bottom: 10px;
+}
+.offer-card button{
+    padding: 10px;
+    outline: none;
+    border: none;
+    text-transform: capitalize;
+    background-color: black;
+    color: #fff;
+    border-radius: 3px;
+    font-size: 20px;
+}
+.pro-slide-box .d-flex{
+    justify-content: space-between;
+    width: 90%;
+    margin: 20px auto;
+}
+.swiper-slide{
+    width: max-content;
+}
+@media (max-width:1025px){
+    .slider-wrapper{
+        width: auto !important;
+    }
+}
+@media (max-width:500px){
+    .pro-slide-box .d-flex h1{
+        font-size: 20px;
+    }
+}
