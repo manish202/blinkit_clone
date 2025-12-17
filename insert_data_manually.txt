@@ -1,0 +1,664 @@
+db.categories.insertMany([
+  {
+    _id: ObjectId("62e4d08da54a650242e51e78"),
+    cat_name: "Fruits & Vegetables",
+    cat_image: "fruit_vege.png",
+    total_products: 22
+  },
+  {
+    _id: ObjectId("62e4d54ddbf79b9774ce095a"),
+    cat_name: "Breakfast & Instant Food",
+    cat_image: "breakfast.webp",
+    total_products: 6
+  },
+  {
+    _id: ObjectId("62e4d54ddbf79b9774ce095f"),
+    cat_name: "Baby Care",
+    cat_image: "baby.avif",
+    total_products: 7
+  },
+  {
+    _id: ObjectId("694245d5b76d0784111e2623"),
+    cat_name: "Personal Care",
+    cat_image: "personal.avif",
+    total_products: 0
+  },
+  {
+    _id: ObjectId("694245d5b76d0784111e2624"),
+    cat_name: "Dairy, Bread & Eggs",
+    cat_image: "dairy-bread-eggs.webp",
+    total_products: 0
+  },
+  {
+    _id: ObjectId("694245d5b76d0784111e2625"),
+    cat_name: "Munchies & Snacks",
+    cat_image: "munchies.avif",
+    total_products: 0
+  },
+  {
+    _id: ObjectId("694245d5b76d0784111e2627"),
+    cat_name: "Atta, Rice & Grains",
+    cat_image: "aata-rice.avif",
+    total_products: 0
+  },
+  {
+    _id: ObjectId("694245d5b76d0784111e2628"),
+    cat_name: "Bakery & Biscuits",
+    cat_image: "bakery-biscuits.webp",
+    total_products: 0
+  },
+  {
+    _id: ObjectId("694245d5b76d0784111e2629"),
+    cat_name: "Chicken, Meat & Fish",
+    cat_image: "chicken.avif",
+    total_products: 0
+  },
+  {
+    _id: ObjectId("694245d5b76d0784111e262a"),
+    cat_name: "Cleaning & Household",
+    cat_image: "cleaning.avif",
+    total_products: 0
+  },
+  {
+    _id: ObjectId("694245d5b76d0784111e262b"),
+    cat_name: "Cold Drinks & Juices",
+    cat_image: "cold-drink.avif",
+    total_products: 0
+  },
+  {
+    _id: ObjectId("694245d5b76d0784111e262c"),
+    cat_name: "Masala & Spices",
+    cat_image: "masala.avif",
+    total_products: 0
+  },
+  {
+    _id: ObjectId("694245d5b76d0784111e262d"),
+    cat_name: "Organic Products",
+    cat_image: "organic.avif",
+    total_products: 0
+  },
+  {
+    _id: ObjectId("694245d5b76d0784111e262e"),
+    cat_name: "Paan & Mouth Fresheners",
+    cat_image: "pann.webp",
+    total_products: 0
+  },
+  {
+    _id: ObjectId("694245d5b76d0784111e262f"),
+    cat_name: "Pet Care",
+    cat_image: "pet.avif",
+    total_products: 0
+  },
+  {
+    _id: ObjectId("694245d5b76d0784111e2630"),
+    cat_name: "Pharma & Wellness",
+    cat_image: "pharma.avif",
+    total_products: 0
+  },
+  {
+    _id: ObjectId("694245d5b76d0784111e2631"),
+    cat_name: "Sauces & Spreads",
+    cat_image: "sauces.avif",
+    total_products: 0
+  },
+  {
+    _id: ObjectId("694245d5b76d0784111e2632"),
+    cat_name: "Sweet Tooth",
+    cat_image: "sweet-tooth.avif",
+    total_products: 0
+  },
+  {
+    _id: ObjectId("694245d5b76d0784111e2633"),
+    cat_name: "Tea, Coffee & Beverages",
+    cat_image: "t-coffee.avif",
+    total_products: 0
+  },
+  {
+    _id: ObjectId("694245d5b76d0784111e2634"),
+    cat_name: "Home & Office",
+    cat_image: "home-office.avif",
+    total_products: 0
+  }
+])
+
+db.subcategories.insertMany([
+  {
+    _id: ObjectId("69424690b76d0784111e2702"),
+    sub_cat_name: "Vegetables",
+    parent_cat: "62e4d08da54a650242e51e78",
+    total_products: 16
+  },
+  {
+    _id: ObjectId("69424690b76d0784111e2701"),
+    sub_cat_name: "Fruits",
+    parent_cat: "62e4d08da54a650242e51e78",
+    total_products: 4
+  },
+  {
+    _id: ObjectId("69424690b78d0794111e2801"),
+    sub_cat_name: "Frozen Veg",
+    parent_cat: "62e4d08da54a650242e51e78",
+    total_products: 2
+  },
+  {
+    _id: ObjectId("69424690b76d0784112e2808"),
+    sub_cat_name: "Noodles",
+    parent_cat: "62e4d54ddbf79b9774ce095a",
+    total_products: 3
+  },
+  {
+    _id: ObjectId("69424690b76d0784112e2809"),
+    sub_cat_name: "Pasta",
+    parent_cat: "62e4d54ddbf79b9774ce095a",
+    total_products: 3
+  },
+  {
+    _id: ObjectId("69424690b76d0784112e2812"),
+    sub_cat_name: "Fruits Juices",
+    parent_cat: "62e4d54ddbf79b9774ce095a",
+    total_products: 0
+  },
+  {
+    _id: ObjectId("69424690b76d0784112e2815"),
+    sub_cat_name: "Energy Bars",
+    parent_cat: "62e4d54ddbf79b9774ce095a",
+    total_products: 0
+  },
+  {
+    _id: ObjectId("69424690b76d0784111e2703"),
+    sub_cat_name: "Baby Food",
+    parent_cat: "62e4d54ddbf79b9774ce095f",
+    total_products: 4
+  },
+  {
+    _id: ObjectId("69424690b76d0784111e2704"),
+    sub_cat_name: "Baby Skin Care",
+    parent_cat: "62e4d54ddbf79b9774ce095f",
+    total_products: 3
+  }
+])
+
+db.adv_slides.insertMany([
+  {
+    image: "brand1.jpg",
+    category: "62e4d08da54a650242e51e78",
+    subcategory: "69424690b76d0784111e2702"
+  },
+  {
+    image: "brand2.jpg",
+    category: "62e4d08da54a650242e51e78",
+    subcategory: "69424690b76d0784111e2701"
+  },
+  {
+    image: "brand3.jpg",
+    category: "62e4d08da54a650242e51e78",
+    subcategory: "69424690b78d0794111e2801"
+  },
+  {
+    image: "brand4.jpg",
+    category: "62e4d54ddbf79b9774ce095a",
+    subcategory: "69424690b76d0784112e2808"
+  },
+  {
+    image: "brand5.jpg",
+    category: "62e4d54ddbf79b9774ce095a",
+    subcategory: "69424690b76d0784112e2809"
+  },
+  {
+    image: "brand6.jpg",
+    category: "62e4d54ddbf79b9774ce095a",
+    subcategory: "69424690b76d0784112e2812"
+  }
+])
+
+db.brands.insertMany([
+  {
+    _id: ObjectId("694247f1b76d0784111e2801"),
+    brand_name: "Farm Fresh",
+    total_products: 22
+  },
+  {
+    _id: ObjectId("694247f1b76d0784111e2802"),
+    brand_name: "Nestlé",
+    total_products: 3
+  },
+  {
+    _id: ObjectId("694247f1b76d0784111e2803"),
+    brand_name: "Himalaya",
+    total_products: 3
+  },
+  {
+    _id: ObjectId("694247f1b76d0784111e2804"),
+    brand_name: "Maggi",
+    total_products: 3
+  },
+  {
+    _id: ObjectId("694247f1b76d0784111e2805"),
+    brand_name: "Generic Pasta",
+    total_products: 3
+  },
+  {
+    _id: ObjectId("694247f1b76d0784111e2806"),
+    brand_name: "Amul",
+    total_products: 1
+  }
+])
+
+db.offer_slides.insertMany([
+  {
+    image: "s1.avif",
+    category: "62e4d08da54a650242e51e78",
+    subcategory: "69424690b76d0784111e2702"
+  },
+  {
+    image: "s2.avif",
+    category: "62e4d08da54a650242e51e78",
+    subcategory: "69424690b76d0784111e2701"
+  },
+  {
+    image: "s3.avif",
+    category: "62e4d08da54a650242e51e78",
+    subcategory: "69424690b78d0794111e2801"
+  },
+  {
+    image: "s4.avif",
+    category: "62e4d54ddbf79b9774ce095a",
+    subcategory: "69424690b76d0784112e2808"
+  },
+  {
+    image: "s5.avif",
+    category: "62e4d54ddbf79b9774ce095a",
+    subcategory: "69424690b76d0784112e2809"
+  },
+  {
+    image: "s6.avif",
+    category: "62e4d54ddbf79b9774ce095a",
+    subcategory: "69424690b76d0784112e2812"
+  },
+  {
+    image: "s7.avif",
+    category: "62e4d54ddbf79b9774ce095a",
+    subcategory: "69424690b76d0784112e2815"
+  },
+  {
+    image: "s8.avif",
+    category: "62e4d54ddbf79b9774ce095f",
+    subcategory: "69424690b76d0784111e2703"
+  },
+  {
+    image: "s9.avif",
+    category: "62e4d08da54a650242e51e78",
+    subcategory: "694246a1b76d0784111e2701"
+  },
+  {
+    image: "s10.webp",
+    category: "62e4d54ddbf79b9774ce095f",
+    subcategory: "69424690b76d0784111e2704"
+  }
+])
+
+db.offer_codes.insertMany([
+  { per: 10, min_txn: 299,  code: "SAVE10" },
+  { per: 15, min_txn: 399,  code: "DEAL15" },
+  { per: 20, min_txn: 499,  code: "GROC20" },
+  { per: 25, min_txn: 599,  code: "BEST25" },
+  { per: 30, min_txn: 699,  code: "BIG30" },
+  { per: 35, min_txn: 799,  code: "SMART35" },
+  { per: 40, min_txn: 999,  code: "SUPER40" },
+  { per: 45, min_txn: 1199, code: "MEGA45" },
+  { per: 50, min_txn: 1499, code: "ULTRA50" },
+  { per: 12, min_txn: 349,  code: "FRESH12" }
+])
+
+db.products.insertMany([
+  {
+    name: "corn cob bhutta",
+    image: "bhutta.jpg",
+    weight: "2 pcs",
+    category: "62e4d08da54a650242e51e78",
+    subcategory: "69424690b76d0784111e2702",
+    brand: "694247f1b76d0784111e2801",
+    mrp: 40,
+    price: 30
+  },
+  {
+    name: "Potato",
+    image: "potato.webp",
+    weight: "1kg",
+    category: "62e4d08da54a650242e51e78",
+    subcategory: "69424690b76d0784111e2702",
+    brand: "694247f1b76d0784111e2801",
+    mrp: 40,
+    price: 30
+  },
+  {
+    name: "Onion",
+    image: "onion.webp",
+    weight: "1kg",
+    category: "62e4d08da54a650242e51e78",
+    subcategory: "69424690b76d0784111e2702",
+    brand: "694247f1b76d0784111e2801",
+    mrp: 55,
+    price: 40
+  },
+  {
+    name: "Beetroot Fresh",
+    image: "beetroot.webp",
+    weight: "500gm",
+    category: "62e4d08da54a650242e51e78",
+    subcategory: "69424690b76d0784111e2702",
+    brand: "694247f1b76d0784111e2801",
+    mrp: 50,
+    price: 38
+  },
+  {
+    name: "Yam Suran",
+    image: "yam.jpg",
+    weight: "500gm",
+    category: "62e4d08da54a650242e51e78",
+    subcategory: "69424690b76d0784111e2702",
+    brand: "694247f1b76d0784111e2801",
+    mrp: 65,
+    price: 50
+  },
+  {
+    name: "Ginger Fresh",
+    image: "ginger.jpg",
+    weight: "250gm",
+    category: "62e4d08da54a650242e51e78",
+    subcategory: "69424690b76d0784111e2702",
+    brand: "694247f1b76d0784111e2801",
+    mrp: 45,
+    price: 35
+  },
+  {
+    name: "Lady Finger",
+    image: "lady-finger.jpg",
+    weight: "500gm",
+    category: "62e4d08da54a650242e51e78",
+    subcategory: "69424690b76d0784111e2702",
+    brand: "694247f1b76d0784111e2801",
+    mrp: 50,
+    price: 40
+  },
+  {
+    name: "baby corn packet",
+    image: "corn.webp",
+    weight: "500gm",
+    category: "62e4d08da54a650242e51e78",
+    subcategory: "69424690b76d0784111e2702",
+    brand: "694247f1b76d0784111e2801",
+    mrp: 65,
+    price: 50
+  },
+  {
+    name: "Tomato",
+    image: "tomato.jpg",
+    weight: "1kg",
+    category: "62e4d08da54a650242e51e78",
+    subcategory: "69424690b76d0784111e2702",
+    brand: "694247f1b76d0784111e2801",
+    mrp: 45,
+    price: 32
+  },
+  {
+    name: "Curry Leaves",
+    image: "curry.jpg",
+    weight: "100gm",
+    category: "62e4d08da54a650242e51e78",
+    subcategory: "69424690b76d0784111e2702",
+    brand: "694247f1b76d0784111e2801",
+    mrp: 20,
+    price: 15
+  },
+  {
+    name: "Colocasia Arbi",
+    image: "colocasia.jpg",
+    weight: "500gm",
+    category: "62e4d08da54a650242e51e78",
+    subcategory: "69424690b76d0784111e2702",
+    brand: "694247f1b76d0784111e2801",
+    mrp: 55,
+    price: 42
+  },
+  {
+    name: "Cucumber Green",
+    image: "cucumber.jpg",
+    weight: "1kg",
+    category: "62e4d08da54a650242e51e78",
+    subcategory: "69424690b76d0784111e2702",
+    brand: "694247f1b76d0784111e2801",
+    mrp: 50,
+    price: 38
+  },
+  {
+    name: "Bottle Gourd",
+    image: "gourd.jpg",
+    weight: "1 pc",
+    category: "62e4d08da54a650242e51e78",
+    subcategory: "69424690b76d0784111e2702",
+    brand: "694247f1b76d0784111e2801",
+    mrp: 40,
+    price: 30
+  },
+  {
+    name: "Garlic Fresh",
+    image: "garlic.jpg",
+    weight: "250gm",
+    category: "62e4d08da54a650242e51e78",
+    subcategory: "69424690b76d0784111e2702",
+    brand: "694247f1b76d0784111e2801",
+    mrp: 55,
+    price: 45
+  },
+  {
+    name: "Capsicum yellow",
+    image: "capsicum.jpg",
+    weight: "500gm",
+    category: "62e4d08da54a650242e51e78",
+    subcategory: "69424690b76d0784111e2702",
+    brand: "694247f1b76d0784111e2801",
+    mrp: 70,
+    price: 55
+  },
+  {
+    name: "Carrot Red",
+    image: "carrot.jpg",
+    weight: "1kg",
+    category: "62e4d08da54a650242e51e78",
+    subcategory: "69424690b76d0784111e2702",
+    brand: "694247f1b76d0784111e2801",
+    mrp: 60,
+    price: 45
+  },
+  {
+    name: "Coconut Fresh",
+    image: "coconut.jpg",
+    weight: "1 pc",
+    category: "62e4d08da54a650242e51e78",
+    subcategory: "69424690b76d0784111e2701",
+    brand: "694247f1b76d0784111e2801",
+    mrp: 45,
+    price: 35
+  },
+  {
+    name: "Apple Red",
+    image: "apple.jpg",
+    weight: "1kg",
+    category: "62e4d08da54a650242e51e78",
+    subcategory: "69424690b76d0784111e2701",
+    brand: "694247f1b76d0784111e2801",
+    mrp: 180,
+    price: 150
+  },
+  {
+    name: "Banana Robusta",
+    image: "banana.jpg",
+    weight: "6 pcs",
+    category: "62e4d08da54a650242e51e78",
+    subcategory: "69424690b76d0784111e2701",
+    brand: "694247f1b76d0784111e2801",
+    mrp: 60,
+    price: 45
+  },
+  {
+    name: "Green Apple",
+    image: "green-apple.jpg",
+    weight: "1kg",
+    category: "62e4d08da54a650242e51e78",
+    subcategory: "69424690b76d0784111e2701",
+    brand: "694247f1b76d0784111e2801",
+    mrp: 200,
+    price: 170
+  },
+  {
+    name: "Green Peas",
+    image: "green-peas.jpg",
+    weight: "500gm",
+    category: "62e4d08da54a650242e51e78",
+    subcategory: "69424690b78d0794111e2801",
+    brand: "694247f1b76d0784111e2801",
+    mrp: 70,
+    price: 55
+  },
+  {
+    name: "Sweet Corn",
+    image: "sweet-corn.jpg",
+    weight: "2 pcs",
+    category: "62e4d08da54a650242e51e78",
+    subcategory: "69424690b78d0794111e2801",
+    brand: "694247f1b76d0784111e2801",
+    mrp: 50,
+    price: 40
+  },
+    {
+    name: "Maggi Family Pack",
+    image: "maggi560.jpg",
+    weight: "560gm",
+    category: "62e4d54ddbf79b9774ce095a",
+    subcategory: "69424690b76d0784112e2808",
+    brand: "694247f1b76d0784111e2804",
+    mrp: 160,
+    price: 140
+  },
+  {
+    name: "Maggi Mega Pack",
+    image: "maggi840.jpg",
+    weight: "840gm",
+    category: "62e4d54ddbf79b9774ce095a",
+    subcategory: "69424690b76d0784112e2808",
+    brand: "694247f1b76d0784111e2804",
+    mrp: 230,
+    price: 205
+  },
+  {
+    name: "Maggi Chicken Noodles",
+    image: "maggi_chicken.jpg",
+    weight: "70gm",
+    category: "62e4d54ddbf79b9774ce095a",
+    subcategory: "69424690b76d0784112e2808",
+    brand: "694247f1b76d0784111e2804",
+    mrp: 15,
+    price: 12
+  },
+  {
+    name: "Amul Spray Milk Powder",
+    image: "amulspray.jpg",
+    weight: "500gm",
+    category: "62e4d54ddbf79b9774ce095f",
+    subcategory: "69424690b76d0784111e2703",
+    brand: "694247f1b76d0784111e2806",
+    mrp: 285,
+    price: 260
+  },
+  {
+    name: "Himalaya Baby Powder",
+    image: "himalaya400.jpg",
+    weight: "400gm",
+    category: "62e4d54ddbf79b9774ce095f",
+    subcategory: "69424690b76d0784111e2704",
+    brand: "694247f1b76d0784111e2803",
+    mrp: 210,
+    price: 185
+  },
+  {
+    name: "Himalaya Baby Lotion",
+    image: "himalayababy.jpg",
+    weight: "200ml",
+    category: "62e4d54ddbf79b9774ce095f",
+    subcategory: "69424690b76d0784111e2704",
+    brand: "694247f1b76d0784111e2803",
+    mrp: 180,
+    price: 160
+  },
+  {
+    name: "Himalaya Neem Soap",
+    image: "himalayasoap.jpg",
+    weight: "125gm",
+    category: "62e4d54ddbf79b9774ce095f",
+    subcategory: "69424690b76d0784111e2704",
+    brand: "694247f1b76d0784111e2803",
+    mrp: 45,
+    price: 38
+  },
+    {
+    name: "Pasta Shells",
+    image: "pasta1.jpg",
+    weight: "500gm",
+    category: "62e4d54ddbf79b9774ce095a",
+    subcategory: "69424690b76d0784112e2809",
+    brand: "694247f1b76d0784111e2805",
+    mrp: 95,
+    price: 80
+  },
+  {
+    name: "Pasta Fusilli",
+    image: "pasta2.jpg",
+    weight: "500gm",
+    category: "62e4d54ddbf79b9774ce095a",
+    subcategory: "69424690b76d0784112e2809",
+    brand: "694247f1b76d0784111e2805",
+    mrp: 105,
+    price: 90
+  },
+  {
+    name: "Pasta Penne",
+    image: "pasta3.jpg",
+    weight: "500gm",
+    category: "62e4d54ddbf79b9774ce095a",
+    subcategory: "69424690b76d0784112e2809",
+    brand: "694247f1b76d0784111e2805",
+    mrp: 100,
+    price: 85
+  },
+  {
+    name: "Cerelac Wheat Apple",
+    image: "cerelac300.jpg",
+    weight: "300gm",
+    category: "62e4d54ddbf79b9774ce095f",
+    subcategory: "69424690b76d0784111e2703",
+    brand: "694247f1b76d0784111e2802",
+    mrp: 240,
+    price: 215
+  },
+  {
+    name: "Nestle Milk Powder",
+    image: "nestle400.jpg",
+    weight: "400gm",
+    category: "62e4d54ddbf79b9774ce095f",
+    subcategory: "69424690b76d0784111e2703",
+    brand: "694247f1b76d0784111e2802",
+    mrp: 240,
+    price: 215
+  },
+  {
+    name: "Nestle Toned Milk",
+    image: "nestlemilk.jpg",
+    weight: "1ltr",
+    category: "62e4d54ddbf79b9774ce095f",
+    subcategory: "69424690b76d0784111e2703",
+    brand: "694247f1b76d0784111e2802",
+    mrp: 70,
+    price: 62
+  }
+])
